@@ -1,0 +1,126 @@
+body, input, select, textarea {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Chivo", Arial, Helvetica, sans-serif;
+}
+
+#sidebar, #header {
+    background: #05668D;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.10);
+    border-right: 2px solid rgba(0,0,0,.05);
+}
+
+#sidebar nav a, #header nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+#sidebar nav a:before {
+    background: rgba(110, 204, 175, .2);
+}
+
+#sidebar nav a:after {
+    background-image: -moz-linear-gradient(to right, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    background-image: -webkit-linear-gradient(to right, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    background-image: -ms-linear-gradient(to right, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    background-image: linear-gradient(to right, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    -moz-transition: max-width 0.2s ease;
+    -webkit-transition: max-width 0.2s ease;
+    -ms-transition: max-width 0.2s ease;
+    transition: max-width 0.2s ease;
+    max-width: 0;
+}
+
+h1.major:after {
+    background-image: -moz-linear-gradient(to left, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    background-image: -webkit-linear-gradient(to left, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    background-image: -ms-linear-gradient(to left, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    background-image: linear-gradient(to left, rgba(110, 204, 175, 1), rgba(240, 243, 189, 1));
+    -moz-transition: max-width 0.2s ease;
+    -webkit-transition: max-width 0.2s ease;
+    -ms-transition: max-width 0.2s ease;
+    transition: max-width 0.2s ease;
+    border-radius: 0.2em;
+    bottom: 0;
+    content: '';
+    height: 0.05em;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.wrapper.style1 {
+    background-color: #14B99A;
+}
+
+.wrapper.style3 {
+    background-color: rgba(2, 128, 144, 1);
+}
+
+#intro {
+    background-image: none;
+}
+
+#intro h1 {
+    font-weight: 900;
+    font-size: 4.5em;
+    letter-spacing: .1em;
+    line-height: 1em;
+}
+
+h1, h2, h3, .title {
+    font-family: "Chivo", Arial, Helvetica, sans-serif;
+}
+
+#header > nav > ul > li a {
+    font-size: 0.7em;
+}
+
+.wrapper.style1-alt, .wrapper.alt {
+    background-color: #05668D;
+}
+
+footer .icon {
+    width: 2.5em;
+    height: 2.5em;
+    display: inline-block;
+    background: white;
+    border-radius: 100%;
+    color: #05668D;
+    text-align: center;
+    line-height: 2.5em;
+    margin: 1em .35em 1em .35em;
+}
+
+footer .icon:hover {
+    color: #fff;
+    background-color: #05668D;
+}
+
+#sidebar-tiny {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #sidebar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+#main {
+    background-color: rgba(2, 128, 144, 1);
+}
+
+.contact-text {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    color: rgba(255, 255, 255, 0.45);
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    line-height: 1.75;
+}
