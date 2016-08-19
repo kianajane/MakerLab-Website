@@ -76,6 +76,15 @@ h1, h2, h3, .title {
     font-size: 0.7em;
 }
 
+#header nav ul {
+    padding: 10px;
+}
+
+#header .title {
+    border: 5px solid white;
+    padding: 5px 10px 5px 10px
+}
+
 .wrapper.style1-alt, .wrapper.alt {
     background-color: #05668D;
 }
@@ -123,4 +132,10 @@ footer .icon:hover {
     font-weight: bold;
     letter-spacing: 0.25em;
     line-height: 1.75;
+}
+
+#intro h1 {
+    border: 15px solid white;
+    width: 540px;
+    padding: 30px;
 }
