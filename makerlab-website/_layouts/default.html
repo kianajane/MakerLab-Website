@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet">
+</head>
+<body>
+    {% include links.html %}
+    <div id="wrapper">
+        {{ content }}
+    </div>
+    {% include footer.html %}
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
