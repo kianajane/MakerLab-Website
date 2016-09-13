@@ -1,141 +1,275 @@
 body, input, select, textarea {
-    color: rgba(255, 255, 255, 1);
-    font-family: $base-font-family;
-}
-
-#sidebar, #header {
-    background: #05668D;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.10);
-    border-right: 2px solid rgba(0,0,0,.05);
-}
-
-#sidebar nav a, #header nav a {
+    color: white;
     font-family: $secondary-font-family;
-    font-size: .7em;
-    color: $link-text;
 }
+h2, h3 {letter-spacing: .05em;}
+h4 {font-weight: normal;}
 
-#sidebar nav a:before {
-    background: $nav;
-}
-
-#sidebar nav a:after {
-    background-image: -moz-linear-gradient(to right, $makerlab-green, rgba(240, 243, 189, 1));
-    background-image: -webkit-linear-gradient(to right, $makerlab-green, rgba(240, 243, 189, 1));
-    background-image: -ms-linear-gradient(to right, $makerlab-green, rgba(240, 243, 189, 1));
-    background-image: linear-gradient(to right, $makerlab-green, rgba(240, 243, 189, 1));
-    -moz-transition: max-width 0.2s ease;
-    -webkit-transition: max-width 0.2s ease;
-    -ms-transition: max-width 0.2s ease;
-    transition: max-width 0.2s ease;
-    max-width: 0;
-}
-
-h1.major:after {
-    background-image: -moz-linear-gradient(to left, $makerlab-green, rgba(240, 243, 189, 1));
-    background-image: -webkit-linear-gradient(to left, $makerlab-green, rgba(240, 243, 189, 1));
-    background-image: -ms-linear-gradient(to left, $makerlab-green, rgba(240, 243, 189, 1));
-    background-image: linear-gradient(to left, $makerlab-green, rgba(240, 243, 189, 1));
-    -moz-transition: max-width 0.2s ease;
-    -webkit-transition: max-width 0.2s ease;
-    -ms-transition: max-width 0.2s ease;
-    transition: max-width 0.2s ease;
-    border-radius: 0.2em;
-    bottom: 0;
-    content: '';
-    height: 0.05em;
-    position: absolute;
-    right: 0;
+/* nav */
+nav, #header {
+    background: $makerlab-green;
+    font-family: $secondary-font-family;
+    font-size: 1.5em;
+    color: $black-45;
+    position: fixed;
+    z-index: 1000;
     width: 100%;
 }
-
-.wrapper.style1 {
-    background-color: #14B99A;
+ul {
+    padding-left: 1.5em;
+}
+ul li {
+    padding-left: 0em;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: $makerlab-green;
+  margin: 0;
+}
+ul.topnav li {float: left;}
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1.2em 1.2em 1.2em 1.5em;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  border: none;
+  text-transform: uppercase;
+  font-size: .6em;
+  letter-spacing: .2em;
+  font-weight: bold;
+  color: $white-75;
+}
+ul.topnav li a:hover {background-color: $teal;}
+ul.topnav li.icon {display: none;}
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+      position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    padding-left: 0px;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  ul li {
+      padding-left: 0em;
+  }
+}
+@media screen and (max-width:400px) {
+    ul {
+        padding-left: .5em;
+    }
+    ul.topnav li a {
+        padding: 0.7em 1.2em 0.7em 1.2em;
+    }
 }
 
-.wrapper.style3 {
-    background-color: $grey;
-}
-
+/* header */
 #intro {
     background-image: none;
+    background: $makerlab-green;
+    padding-top: 10em;
 }
-
-#intro h1 {
-    font-weight: 900;
-    font-size: 4.5em;
-    letter-spacing: .1em;
-    line-height: 1em;
-}
-
 h1, h2, h3, .title {
     font-family: $base-font-family;
 }
-
-#header > nav > ul > li a {
-    font-size: 0.7em;
+#makerlab-text {
+    width: 100%;
+    margin-bottom: 3em;
+}
+#makerlab-text h1 {
+    border: 15px solid white;
+    padding: .3em;
+    margin: 0px;
+    font-weight: 900;
+    font-size: 5em;
+    letter-spacing: .1em;
+    display: inline;
+}
+@media screen and (max-width:925px) {
+    #intro {
+        padding-top: 13em;
+    }
+}
+@media screen and (max-width:855px) {
+    #makerlab-text h1 {
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:680px) {
+    #intro {
+        padding-top: 7em;
+    }
+}
+@media screen and (max-width:640px) {
+    #makerlab-text h1 {
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width:500px) {
+    #makerlab-text h1 {
+        font-size: 3em;
+        border: 10px solid white;
+    }
+}
+@media screen and (max-width:440px) {
+    #makerlab-text h1 {
+        border: 6px solid white;
+        padding: .4em;
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:428px) {
+    #makerlab-text h1 {
+        padding: .2em;
+        font-size: 2.5em;
+    }
+    #makerlab-text {
+        margin-bottom: 2em;
+    }
 }
 
-#header nav ul {
-    padding: 10px;
+/* footer */
+footer {
+    align-items: center;
+    padding: 2em;
+    background-color: $blue;
 }
-
-#header .title {
-    border: 5px solid white;
-    padding: 5px 10px 5px 10px
-}
-
-.wrapper.style1-alt, .wrapper.alt {
-    background-color: #05668D;
-}
-
 footer .icon {
     width: 2.5em;
     height: 2.5em;
     display: inline-block;
     background: white;
     border-radius: 100%;
-    color: #05668D;
+    color: $blue;
     text-align: center;
     line-height: 2.5em;
     margin: 1em .35em 1em .35em;
 }
-
 footer .icon:hover {
-    color: #fff;
-    background-color: #05668D;
+    color: white;
+    background-color: $blue;
 }
-
-#sidebar-tiny {
-    display: none;
-}
-
-@media screen and (max-width: 1200px) {
-    #sidebar {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-}
-
-#main {
-    background-color: $grey;
-}
-
+footer a {border-bottom: none;}
 .contact-text {
     text-transform: uppercase;
     font-family: $secondary-font-family;
-    font-size: .7em;
-    color: $link-text;
+    font-size: .8em;
+    color: $white-75;
     font-weight: bold;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.2em;
     line-height: 1.75;
 }
 
-#intro h1 {
-    border: 15px solid white;
-    width: 540px;
-    padding: 30px;
+/* sections */
+.features {
+    border: none;
+    background: none;
+}
+#activities {
+    background-color: $teal;
+}
+#projects {
+    background-color: $bright-purple;
+}
+#main {
+    background-color: $makerlab-green;
+    overflow:hidden;
+}
+@media screen and (max-width:928px) {
+    #main {
+        padding-top: 10em;
+    }
+}
+@media screen and (max-width:680px) {
+    #main {
+        padding-top: 5em;
+    }
+}
+
+/* wrapper */
+.wrapper {
+    position: relative;
+}
+.wrapper > section {
+    padding: 5em 5em 3em 5em ;
+    max-width: 100%;
+}
+.indented-title {
+    padding: 3em 3em 2em 5em;
+}
+@media screen and (max-width:680px) {
+    .wrapper > section, .indented-title {
+        padding: 2em 3em 2em 3.5em;
+    }
+}
+@media screen and (max-width:400px) {
+    .wrapper > section, .indented-title {
+        padding: 2em 2em 1em 2em;
+    }
+}
+
+/* line */
+h1.major:after {
+    background-image: -moz-linear-gradient(to right, $dark-blue, $makerlab-green);
+    background-image: -webkit-linear-gradient(to right, $dark-blue, $makerlab-green);
+    background-image: -ms-linear-gradient(to right, $dark-blue, $makerlab-green);
+    background-image: linear-gradient(to right, $dark-blue, $makerlab-green);
+}
+
+/* people and groups section */
+.half-big, .half-big-first {
+    display: block;
+
+    h1.major {
+        margin-bottom: .7em;
+    }
+}
+@media screen and (min-width:1000px) {
+    .half-big, .half-big-first {
+        width: 48%;
+    }
+    .half-big-first {
+        margin-right: 2em;
+        float: left;
+    }
+    .half-big {
+        float: right;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .half-big, .half-big-first {
+        width: 100%;
+    }
+}
+
+/* clubs */
+.SOFIYAS-BOX {
+    border: 3px solid white;
+    padding: 1em;
+    margin: 1em;
+}
+.SOFIYAS-BOX h2 {
+    border-bottom: 3px solid white;
+    letter-spacing: .15em;
 }

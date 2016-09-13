@@ -8,17 +8,20 @@
     <link href="https://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet">
 </head>
 <body>
-    {% include links.html %}
-    <div id="wrapper">
-        {{ content }}
-    </div>
+    {% include nav.html %}
+    {{ content }}
     {% include footer.html %}
 
     <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.scrollex.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    <script src="/assets/js/skel.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script>
+        function navigation() {
+            var x = document.getElementById("navigation");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
