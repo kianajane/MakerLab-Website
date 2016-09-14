@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workspaces</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,900" rel="stylesheet">
+</head>
+<body>
+    <nav>
+    <ul class="topnav" id="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/workspaces">Workspaces</a></li>
+            <li><a href="/training">Training</a></li>
+            <li><a href="/people">People and Groups</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="navigation()">☰</a>
+            </li>
+    </ul>
+</nav>
+
+    <div class="wrapper">
+    <section id="main">
+        <h1 class="major">Workspaces</h1>
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+
+<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+    </section>
+</div>
+
+    <footer>
+    <center>
+        <div class="contact-text">Contact the MakerLab</div>
+        <a href="https://www.facebook.com/brandeismakerlab/?fref=ts"><span class="icon fa-facebook"></span></a>
+        <a href=""><span class="icon fa-twitter"></span></a>
+        <a href=""><span class="icon fa-instagram"></span></a>
+        <a href=""><span class="icon fa-envelope-o"></span></a>
+    </center>
+</footer>
+
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script>
+        function navigation() {
+            var x = document.getElementById("navigation");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
