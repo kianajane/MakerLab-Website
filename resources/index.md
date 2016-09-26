@@ -2,6 +2,124 @@
 layout: page
 title:  "Resources"
 ---
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+<div class="half-big-first">
+    <h1 class="major">3D Printers</h1>
+    <div class="SOFIYAS-BOX">
+        <h2>LTS Owned</h2>
+        <ul>
+            <li>Creator X x 4 (Mr. Orange, Mr. Green, Mr. Moustache)</li>
+            <li>Monoprice 3D Pro (Mr. Red)</li>
+            <li>PowerSpeck 3D Pro (Mr. GooglyEyes)</li>
+            <li>Dremel 3D Pro (student donated)</li>
+            <li>mUVe 1 SLA (assembled by donated staff time)</li>
+            <li>mUVe 1 DLP (unbuilt)</li>
+            <li>FormLabs Form1 SLA</li>
+            <li>DeezMaker Bukito (6-pound portable mini printer)</li>
+            <li>Printrbot (with Paste-extruder food printing modification)</li>
+            <li>3x M3D mini 3D printer (Blue, Green, Orange)</li>
+            <li>Wanhao Prusia i3 (reprap)</li>
+            <li>Deltaprintr</li>
+            <li>Monoprice 3D mini x 6 (loaners)</li>
+            <li>SeeMeCNC - ERIS delta</li>
+        </ul>
+        <h2>Deis3D Owned</h2>
+        <ul>
+            <li>MakerBot Rep2 x 11 (Aleph and Omega + 9 from Yale)</li>
+            <li>Makerbot Rep2x</li>
+            <li>LeapFrog XL (24-inch build height)</li>
+            <li>Type A Machines, Series 1 (12x12x12-inch build volume)</li>
+            <li>DeltaMaker</li>
+            <li>DeltaPrintr</li>
+            <li>MakerGear M2</li>
+            <li>Ultimaker 2</li>
+            <li>FormLabs Form1 SLA</li>
+            <li>RoVa 5</li>
+            <li>Builder (2 filament mixing)</li>
+            <li>Builder Premium Small</li>
+            <li>BQ Whitbox with Diamond Hotend (3 filament mixing)</li>
+            <li>Rostock Max (unbuilt kit)</li>
+            <li>Prussia i3 x2</li>
+            <li>Fold-a-Rap</li>
+            <li>Lulzbot Taz 5</li>
+            <li>FusionTech ideaPrinter F100L (22.6-inch build height)</li>
+            <li>Morgan Pro</li>
+            <li>WASP 20x40 Turbo</li>
+            <li>WITBOX</li>
+        </ul>
+        <h2>Not in lab, but in community</h2>
+        <ul>
+            <li>Z-corp 250 (BinderJet 64 color)</li>
+        </ul>
+    </div>
+    <h1 class="major">3D Scanning</h1>
+    <div class="SOFIYAS-BOX">
+        <ul>
+            <li>Xbox 360 Kinect x 2</li>
+            <li>Xbox One Kinect x 4</li>
+            <li>Next Engine Desktop 3D Scanner</li>
+            <li>David 3D Scanner</li>
+        </ul>
+    </div>
+</div>
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+<div class="half-big">
+    <h1 class="major">Circuits</h1>
+    <div class="SOFIYAS-BOX">
+        <ul>
+            <li>4x Soldering kits</li>
+            <li>adjustable iron</li>
+            <li>iron stand</li>
+            <li>solder sucker</li>
+            <li>solder wick</li>
+            <li>ESD mat</li>
+            <li>rosin core lead free solder</li>
+            <li>2x bench power supplies</li>
+            <li>soldering practice kits</li>
+            <li>breadboards</li>
+            <li>protoboards</li>
+            <li>flux paste</li>
+            <li>flux syringe</li>
+            <li>circuit cleaning equipment</li>
+            <li>kimwipes, alcohol, acid brushes</li>
+        </ul>
+    </div>
+    <h1 class="major">Embedded Systems</h1>
+    <div class="SOFIYAS-BOX">
+        <ul>
+            <li>Raspberry Pi 2 B+ x 4</li>
+            <li>Raspbery Pi B+ x 2</li>
+            <li>Raspberry Pi B w/ Camera x 4</li>
+            <li>Arduino Uno x 2</li>
+            <li>Arduino Mega x 2</li>
+            <li>Gameduino</li>
+            <li>MBED boards</li>
+            <li>Beaglebone Black</li>
+            <li>Paralella board</li>
+            <li>Many many sensors and shields</li>
+        </ul>
+    </div>
+    <h1 class="major">Virtual Reality</h1>
+    <div class="SOFIYAS-BOX">
+        <ul>
+            <li>Custom Built watercooled high end PC (6-corei7/32GB/Geforce 990TI)</li>
+            <li>3x custom PCs in Farber Innovation Classroom</li>
+            <li>2x custom PCs belonging to Deis3D</li>
+            <li>Oculus Rift DK2 w/ Leap Motion x 2</li>
+            <li>Google cardboard x 5</li>
+            <li>Muse Headband x 3</li>
+            <li>Myo Gesture Armband</li>
+        </ul>
+    </div>
+    <h1 class="major">Software Tools</h1>
+    <div class="SOFIYAS-BOX">
+        <ul>
+            <li>27" iMac (Corei7 / 16GB)</li>
+            <li>24" all-in-one Dell (Corei7 / 16GB) x 2</li>
+            <li>5 foot pull-down Projection Screen</li>
+            <li>55" Ideium Touch Table w/Win8</li>
+            <li>Leap Motion gesture controllers x 2</li>
+            <li>Fillabot 3D printer filament Reclaimer and Extruder/Recycler</li>
+            <li>Google Cardboard</li>
+        </ul>
+    </div>
+</div>

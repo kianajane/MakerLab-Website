@@ -5399,3 +5399,19 @@ h1.major:after {
 .SOFIYAS-BOX h2 {
   border-bottom: 3px solid white;
   letter-spacing: .15em; }
+
+/* misc */
+.paragraph-image {
+  width: 75%;
+  height: auto; }
+
+ul {
+  margin: 0; }
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+  height: auto;
+  line-height: inherit;
+  padding: 0.7em 1.5em;
+  margin: .4em;
+  letter-spacing: .2em;
+  font-size: .6em; }

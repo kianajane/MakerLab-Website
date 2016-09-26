@@ -2,6 +2,17 @@
 layout: page
 title:  "Workspaces"
 ---
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+<h2>MakerLab</h2>
+<img class="paragraph-image" src="/assets/images/makerlab.jpg"/>
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+Unlike other makerspaces, the Brandeis MakerLab is organized around a social justice vision that emphasizes broad access to innovation expertise and technologies as well as the positive impact that innovation can make in the world.  The MakerLab enjoys very broad involvement from the Brandeis community, including students, faculty researchers, and staff members.  Also particularly notable is the MakerLab’s vibrant and effective culture of tinkering and beta-testing that enables rapid and effective innovation.  This approach has captured the imagination of a growing cohort of faculty members, who are enhancing their courses by integrating maker elements in consultation with expert LTS staff.  Every day, members of the expanding Brandeis maker community pursue technology projects that develop new forms of culture and craft in a collaborative setting.
+
+<h2>Farber Classroom</h2>
+<img class="paragraph-image" src="/assets/images/farber.jpg"/>
+
+Farber Classroom is a computer lab that hosts classes year-round and is available as a study space to students during off-hours.  It seats 35 students and one instructor, has a projector at the front of the classroom, and a high-volume printer towards the back.  All of the lab computers (excluding 3 PCs) have Windows OS virtualization as well as a host of academic software to support students and instructors who require computers for their lessons.  We've recently partnered with the MakerLab to expand our hardware and software offerings to include CAD, VR, game design, and molecular modeling among others.
+
+<h2>Digital Humanities Lab</h2>
+<img class="paragraph-image" src="/assets/images/digital-humanities-lab.jpeg"/>
+
+The Digital Humanities Lab brings together students and faculty to pursue humanistic research questions through digital tools, methods, and practices.
