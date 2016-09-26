@@ -4516,12 +4516,6 @@ body.is-ie .spotlights > section {
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1; }
 
-.spotlights > section:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.05); }
-
-.spotlights > section:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.1); }
-
 .spotlights > section.inactive > .image:before, body.is-loading .spotlights > section > .image:before {
   opacity: 1; }
 
@@ -5159,7 +5153,7 @@ body, input, select, textarea {
   font-family: Arial, Helvetica, sans-serif; }
 
 h2, h3 {
-  letter-spacing: .05em; }
+  letter-spacing: .1em; }
 
 h4 {
   font-weight: normal; }
@@ -5200,7 +5194,7 @@ ul.topnav li a {
   border: none;
   text-transform: uppercase;
   font-size: .6em;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.7); }
 
@@ -5250,15 +5244,16 @@ ul.topnav li.icon {
   padding-top: 10em; }
 
 h1, h2, h3, .title {
-  font-family: "Chivo", Arial, Helvetica, sans-serif; }
+  font-family: Century Gothic W01 Bold, Arial, Helvetica, sans-serif; }
 
 #makerlab-text {
   width: 100%;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  font-weight: 500; }
 
 #makerlab-text h1 {
   border: 15px solid white;
-  padding: .3em;
+  padding: 0em .2em 0em .2em;
   margin: 0px;
   font-weight: 900;
   font-size: 5em;
@@ -5284,8 +5279,8 @@ h1, h2, h3, .title {
 @media screen and (max-width: 440px) {
   #makerlab-text h1 {
     border: 6px solid white;
-    padding: .4em;
-    font-size: 2.5em; } }
+    padding: 0em .2em 0em .2em;
+    font-size: 3em; } }
 @media screen and (max-width: 428px) {
   #makerlab-text h1 {
     padding: .2em;
@@ -5341,7 +5336,7 @@ footer a {
   background-color: #14b99a;
   overflow: hidden; }
 
-@media screen and (max-width: 928px) {
+@media screen and (max-width: 977px) {
   #main {
     padding-top: 10em; } }
 @media screen and (max-width: 680px) {
@@ -5372,6 +5367,9 @@ h1.major:after {
   background-image: linear-gradient(to right, #05668d, #14b99a); }
 
 /* people and groups section */
+h1.major {
+  letter-spacing: .05em; }
+
 .half-big, .half-big-first {
   display: block; }
   .half-big h1.major, .half-big-first h1.major {
@@ -5398,7 +5396,7 @@ h1.major:after {
 
 .SOFIYAS-BOX h2 {
   border-bottom: 3px solid white;
-  letter-spacing: .15em; }
+  letter-spacing: .1em; }
 
 /* misc */
 .paragraph-image {
@@ -5415,3 +5413,10 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
   margin: .4em;
   letter-spacing: .2em;
   font-size: .6em; }
+
+.spotlights > section {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 4px #312450; }
+
+.spotlights > section:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05); }

@@ -46,7 +46,7 @@ title:  "Resources"
             <li>WASP 20x40 Turbo</li>
             <li>WITBOX</li>
         </ul>
-        <h2>Not in lab, but in community</h2>
+        <h2>Community Printers</h2>
         <ul>
             <li>Z-corp 250 (BinderJet 64 color)</li>
         </ul>
@@ -110,7 +110,7 @@ title:  "Resources"
             <li>Myo Gesture Armband</li>
         </ul>
     </div>
-    <h1 class="major">Software Tools</h1>
+    <h1 class="major">Other Hardware</h1>
     <div class="SOFIYAS-BOX">
         <ul>
             <li>27" iMac (Corei7 / 16GB)</li>

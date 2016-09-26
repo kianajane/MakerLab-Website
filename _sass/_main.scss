@@ -2,7 +2,7 @@ body, input, select, textarea {
     color: white;
     font-family: $secondary-font-family;
 }
-h2, h3 {letter-spacing: .05em;}
+h2, h3 {letter-spacing: .1em;}
 h4 {font-weight: normal;}
 
 /* nav */
@@ -39,7 +39,7 @@ ul.topnav li a {
   border: none;
   text-transform: uppercase;
   font-size: .6em;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   font-weight: bold;
   color: $white-75;
 }
@@ -95,10 +95,11 @@ h1, h2, h3, .title {
 #makerlab-text {
     width: 100%;
     margin-bottom: 3em;
+    font-weight: 500;
 }
 #makerlab-text h1 {
     border: 15px solid white;
-    padding: .3em;
+    padding: 0em .2em 0em .2em;
     margin: 0px;
     font-weight: 900;
     font-size: 5em;
@@ -134,8 +135,8 @@ h1, h2, h3, .title {
 @media screen and (max-width:440px) {
     #makerlab-text h1 {
         border: 6px solid white;
-        padding: .4em;
-        font-size: 2.5em;
+        padding: 0em .2em 0em .2em;
+        font-size: 3em;
     }
 }
 @media screen and (max-width:428px) {
@@ -195,7 +196,7 @@ footer a {border-bottom: none;}
     background-color: $makerlab-green;
     overflow:hidden;
 }
-@media screen and (max-width:928px) {
+@media screen and (max-width:977px) {
     #main {
         padding-top: 10em;
     }
@@ -237,6 +238,9 @@ h1.major:after {
 }
 
 /* people and groups section */
+h1.major {
+    letter-spacing: .05em;
+}
 .half-big, .half-big-first {
     display: block;
 
@@ -271,7 +275,7 @@ h1.major:after {
 }
 .SOFIYAS-BOX h2 {
     border-bottom: 3px solid white;
-    letter-spacing: .15em;
+    letter-spacing: .1em;
 }
 
 /* misc */
@@ -291,4 +295,14 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     margin: .4em;
     letter-spacing: .2em;
     font-size: .6em;
+}
+
+.spotlights > section {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px $purple;
+}
+
+
+.spotlights > section:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.05);
 }
