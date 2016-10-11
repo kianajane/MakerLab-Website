@@ -4,15 +4,18 @@
     <title>Brandeis MakerLab</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
     <link rel="stylesheet" href="/assets/css/style.css" />
     <style type="text/css">
-    @import url("https://fast.fonts.net/lt/1.css?apiType=da&c=1c2a672b-82aa-4d10-890f-c288009118b0&fontids=692079");
-    @font-face{
-        font-family:"Century Gothic W01 Bold";
-        src:url("/assets/Fonts/692079/b247e158-e647-4a3d-9637-944de5124043.eot?#iefix");
-        src:url("/assets/Fonts/692079/b247e158-e647-4a3d-9637-944de5124043.eot?#iefix") format("eot"),url("/assets/Fonts/692079/bc0668e2-e5c8-45ce-954d-3b998c6b6803.woff2") format("woff2"),url("/assets/Fonts/692079/2ef5ecda-1772-45e2-843f-a13f5d76ed3a.woff") format("woff"),url("/assets/Fonts/692079/33cf10ca-a6bb-4888-a320-d38720c9847b.ttf") format("truetype");
-    }
-</style>
+        @import url("https://fast.fonts.net/lt/1.css?apiType=da&c=1c2a672b-82aa-4d10-890f-c288009118b0&fontids=692079");
+        @font-face{
+            font-family:"Century Gothic W01 Bold";
+            src:url("/assets/Fonts/692079/b247e158-e647-4a3d-9637-944de5124043.eot?#iefix");
+            src:url("/assets/Fonts/692079/b247e158-e647-4a3d-9637-944de5124043.eot?#iefix") format("eot"),url("/assets/Fonts/692079/bc0668e2-e5c8-45ce-954d-3b998c6b6803.woff2") format("woff2"),url("/assets/Fonts/692079/2ef5ecda-1772-45e2-843f-a13f5d76ed3a.woff") format("woff"),url("/assets/Fonts/692079/33cf10ca-a6bb-4888-a320-d38720c9847b.ttf") format("truetype");
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
 
 </head>
 <body>
@@ -21,16 +24,8 @@
     {% include footer.html %}
 
     <script src="/assets/js/jquery.min.js"></script>
-    <script>
-        function navigation() {
-            var x = document.getElementById("navigation");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="/assets/js/initialize.js"></script>
 </body>
 
 </html>
