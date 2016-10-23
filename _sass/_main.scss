@@ -1,9 +1,56 @@
 body, input, select, textarea {
     color: white;
     font-family: $secondary-font-family;
+    font-size: 15px;
 }
-h2, h3 {letter-spacing: .1em;}
-h4 {font-weight: normal;}
+.pure-u-lg-1-2, .pure-u-lg-12-24, .pure-u-1-3, .pure-u-1, .pure-u-lg-1-3 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.spotlights > section > .content {
+    padding-top: 1em;
+}
+
+/* text */
+h1.major {
+    border: none;
+    margin: 0;
+    margin-bottom: .5em;
+    padding-bottom: 0;
+    font-weight: normal;
+}
+h1.major:after {
+    background-image: -moz-linear-gradient(to right, $dark-blue, $makerlab-green);
+    background-image: -webkit-linear-gradient(to right, $dark-blue, $makerlab-green);
+    background-image: -ms-linear-gradient(to right, $dark-blue, $makerlab-green);
+    background-image: linear-gradient(to right, $dark-blue, $makerlab-green);
+}
+h2 {
+    margin-bottom: 0px;
+    margin-top: .2em;
+}
+h2, h3 {
+    letter-spacing: .1em;
+}
+h3 {
+    font-size: 1.2em;
+    margin: .5em 0 0.2em 0;
+}
+h4 {
+    font-weight: normal;
+}
+p {
+    margin: 0 0 1em 0;
+    letter-spacing: normal;
+}
+@media screen and (max-width: 736px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
 
 /* nav */
 nav, #header {
@@ -149,6 +196,11 @@ h1, h2, h3, .title {
     }
 }
 
+.features section .icon {
+    left: 2em;
+    top: 2em;
+}
+
 /* footer */
 footer {
     align-items: center;
@@ -186,17 +238,23 @@ footer a {border-bottom: none;}
     border: none;
     background: none;
 }
+.features section {
+    padding: 1em 1em 1em 6em;
+}
 #activities {
     background-color: $teal;
 }
 #projects {
     background-color: $bright-purple;
 }
+#makers-in-residence {
+    background-color: $teal;
+}
 #main {
     background-color: $makerlab-green;
     overflow:hidden;
 }
-@media screen and (max-width:1109px) {
+@media screen and (max-width:1039px) {
     #main {
         padding-top: 10em;
     }
@@ -215,6 +273,9 @@ footer a {border-bottom: none;}
     padding: 5em 5em 3em 5em ;
     max-width: 100%;
 }
+.wrapper > #activities {
+    padding: 3em 5em 2em 5em;
+}
 .indented-title {
     padding: 3em 3em 2em 5em;
 }
@@ -229,52 +290,12 @@ footer a {border-bottom: none;}
     }
 }
 
-/* line */
-h1.major:after {
-    background-image: -moz-linear-gradient(to right, $dark-blue, $makerlab-green);
-    background-image: -webkit-linear-gradient(to right, $dark-blue, $makerlab-green);
-    background-image: -ms-linear-gradient(to right, $dark-blue, $makerlab-green);
-    background-image: linear-gradient(to right, $dark-blue, $makerlab-green);
-}
-
-/* people and groups section */
-h1.major {
-    letter-spacing: .05em;
-}
-.half-big, .half-big-first {
-    display: block;
-
-    h1.major {
-        margin-bottom: .7em;
-    }
-}
-@media screen and (min-width:1000px) {
-    .half-big, .half-big-first {
-        width: 48%;
-    }
-    .half-big-first {
-        margin-right: 2em;
-        float: left;
-    }
-    .half-big {
-        float: right;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .half-big, .half-big-first {
-        width: 100%;
-    }
-}
-
 /* clubs */
 .SOFIYAS-BOX {
-    border: 3px solid white;
-    padding: 1em;
-    margin: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 .SOFIYAS-BOX h2 {
-    border-bottom: 3px solid white;
     letter-spacing: .1em;
 }
 
@@ -283,11 +304,9 @@ h1.major {
     width: 75%;
     height: auto;
 }
-
 ul {
     margin: 0;
 }
-
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
     height: auto;
     line-height: inherit;
@@ -296,13 +315,10 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     letter-spacing: .2em;
     font-size: .6em;
 }
-
 .spotlights > section {
     background-color: rgba(0, 0, 0, 0.1);
     border-bottom: 4px $purple;
 }
-
-
 .spotlights > section:nth-child(even) {
 	background-color: rgba(0, 0, 0, 0.05);
 }

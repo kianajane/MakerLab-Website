@@ -5150,14 +5150,54 @@ body.is-loading #sidebar nav ul li {
     background-attachment: scroll; } }
 body, input, select, textarea {
   color: white;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+.pure-u-lg-1-2, .pure-u-lg-12-24, .pure-u-1-3, .pure-u-1, .pure-u-lg-1-3 {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.spotlights > section > .content {
+  padding-top: 1em; }
+
+/* text */
+h1.major {
+  border: none;
+  margin: 0;
+  margin-bottom: .5em;
+  padding-bottom: 0;
+  font-weight: normal; }
+
+h1.major:after {
+  background-image: -moz-linear-gradient(to right, #05668d, #14b99a);
+  background-image: -webkit-linear-gradient(to right, #05668d, #14b99a);
+  background-image: -ms-linear-gradient(to right, #05668d, #14b99a);
+  background-image: linear-gradient(to right, #05668d, #14b99a); }
+
+h2 {
+  margin-bottom: 0px;
+  margin-top: .2em; }
 
 h2, h3 {
   letter-spacing: .1em; }
 
+h3 {
+  font-size: 1.2em;
+  margin: .5em 0 0.2em 0; }
+
 h4 {
   font-weight: normal; }
 
+p {
+  margin: 0 0 1em 0;
+  letter-spacing: normal; }
+
+@media screen and (max-width: 736px) {
+  h2 {
+    font-size: 1.5em; }
+
+  h3 {
+    font-size: 1em; } }
 /* nav */
 nav, #header {
   background: #14b99a;
@@ -5288,6 +5328,10 @@ h1, h2, h3, .title {
 
   #makerlab-text {
     margin-bottom: 2em; } }
+.features section .icon {
+  left: 2em;
+  top: 2em; }
+
 /* footer */
 footer {
   align-items: center;
@@ -5326,17 +5370,23 @@ footer a {
   border: none;
   background: none; }
 
+.features section {
+  padding: 1em 1em 1em 6em; }
+
 #activities {
   background-color: #028090; }
 
 #projects {
   background-color: #5052b5; }
 
+#makers-in-residence {
+  background-color: #028090; }
+
 #main {
   background-color: #14b99a;
   overflow: hidden; }
 
-@media screen and (max-width: 1109px) {
+@media screen and (max-width: 1039px) {
   #main {
     padding-top: 10em; } }
 @media screen and (max-width: 680px) {
@@ -5350,6 +5400,9 @@ footer a {
   padding: 5em 5em 3em 5em;
   max-width: 100%; }
 
+.wrapper > #activities {
+  padding: 3em 5em 2em 5em; }
+
 .indented-title {
   padding: 3em 3em 2em 5em; }
 
@@ -5359,43 +5412,12 @@ footer a {
 @media screen and (max-width: 400px) {
   .wrapper > section, .indented-title {
     padding: 2em 2em 1em 2em; } }
-/* line */
-h1.major:after {
-  background-image: -moz-linear-gradient(to right, #05668d, #14b99a);
-  background-image: -webkit-linear-gradient(to right, #05668d, #14b99a);
-  background-image: -ms-linear-gradient(to right, #05668d, #14b99a);
-  background-image: linear-gradient(to right, #05668d, #14b99a); }
-
-/* people and groups section */
-h1.major {
-  letter-spacing: .05em; }
-
-.half-big, .half-big-first {
-  display: block; }
-  .half-big h1.major, .half-big-first h1.major {
-    margin-bottom: .7em; }
-
-@media screen and (min-width: 1000px) {
-  .half-big, .half-big-first {
-    width: 48%; }
-
-  .half-big-first {
-    margin-right: 2em;
-    float: left; }
-
-  .half-big {
-    float: right; } }
-@media screen and (max-width: 1000px) {
-  .half-big, .half-big-first {
-    width: 100%; } }
 /* clubs */
 .SOFIYAS-BOX {
-  border: 3px solid white;
-  padding: 1em;
-  margin: 1em; }
+  padding-top: .5em;
+  padding-bottom: .5em; }
 
 .SOFIYAS-BOX h2 {
-  border-bottom: 3px solid white;
   letter-spacing: .1em; }
 
 /* misc */
@@ -5877,7 +5899,8 @@ https://github.com/yui/pure/blob/master/LICENSE.md
   height: 0;
   height: auto;
   width: 100%;
-  overflow: scroll; }
+  overflow: scroll;
+  padding-top: 1em; }
 
 form {
   margin-bottom: 0; }
