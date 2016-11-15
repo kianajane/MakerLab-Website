@@ -26,7 +26,7 @@ h1.major:after {
     background-image: linear-gradient(to right, $dark-blue, $makerlab-green);
 }
 h2 {
-    margin-bottom: 0px;
+    margin-bottom: .2em;
     margin-top: .2em;
 }
 h2, h3 {
@@ -241,20 +241,20 @@ footer a {border-bottom: none;}
 .features section {
     padding: 1em 1em 1em 6em;
 }
-#activities {
+.teal {
     background-color: $teal;
 }
 #projects {
     background-color: $bright-purple;
 }
-#makers-in-residence {
+.featured-projects {
     background-color: $teal;
 }
 #main {
     background-color: $makerlab-green;
     overflow:hidden;
 }
-@media screen and (max-width:1039px) {
+@media screen and (max-width:1329px) {
     #main {
         padding-top: 10em;
     }
@@ -273,7 +273,7 @@ footer a {border-bottom: none;}
     padding: 5em 5em 3em 5em ;
     max-width: 100%;
 }
-.wrapper > #activities {
+.wrapper > #activities,#tools {
     padding: 3em 5em 2em 5em;
 }
 .indented-title {
@@ -293,7 +293,7 @@ footer a {border-bottom: none;}
 /* clubs */
 .SOFIYAS-BOX {
     padding-top: .5em;
-    padding-bottom: .5em;
+    padding-bottom: 1em;
 }
 .SOFIYAS-BOX h2 {
     letter-spacing: .1em;
@@ -321,4 +321,29 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 }
 .spotlights > section:nth-child(even) {
 	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.inline-button-link {
+    display: inline;
+}
+
+.blue {
+    background-color: $blue;
+}
+
+.tag {
+    padding: .5em .6em .5em .6em;
+    margin-left: 1em;
+    font-size: .4em;
+    background-color: $makerlab-green;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    display: inline-block;
+    vertical-align: super;
+}
+
+.SOFIYAS-BOX .pure-img {
+    padding: 1em 3em 2em 2em;
 }
