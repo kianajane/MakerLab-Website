@@ -3545,7 +3545,6 @@ button,
   border: solid 1px !important;
   border-color: rgba(255, 255, 255, 0.15) !important;
   border-radius: 3em;
-  color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.6em;
@@ -5153,12 +5152,14 @@ body, input, select, textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px; }
 
-.pure-u-lg-1-2, .pure-u-lg-12-24, .pure-u-1-3, .pure-u-1, .pure-u-lg-1-3 {
+.pure-u-lg-1-2, .pure-u-lg-12-24, .pure-u-1-3, .pure-u-1, .pure-u-lg-1-3, .pure-u-1-5 {
   padding-left: 1em;
   padding-right: 1em; }
 
 .spotlights > section > .content {
-  padding-top: 1em; }
+  padding-top: 1em;
+  max-width: 80em;
+  width: auto; }
 
 /* text */
 h1.major {
@@ -5366,6 +5367,9 @@ footer a {
   line-height: 1.75; }
 
 /* sections */
+.section {
+  padding: 3em 6em 3em 5em; }
+
 .features {
   border: none;
   background: none; }
@@ -5375,6 +5379,12 @@ footer a {
 
 .teal {
   background-color: #028090; }
+
+.makerlab-green-medium {
+  background-color: #0f8b74; }
+
+.makerlab-green {
+  background-color: #14b99a; }
 
 #projects {
   background-color: #5052b5; }
@@ -5386,7 +5396,7 @@ footer a {
   background-color: #14b99a;
   overflow: hidden; }
 
-@media screen and (max-width: 1329px) {
+@media screen and (max-width: 1246px) {
   #main {
     padding-top: 10em; } }
 @media screen and (max-width: 680px) {
@@ -5400,11 +5410,11 @@ footer a {
   padding: 5em 5em 3em 5em;
   max-width: 100%; }
 
-.wrapper > #activities, #tools {
-  padding: 3em 5em 2em 5em; }
+.wrapper #activities, #tools {
+  padding: 2em 2em 1em 2em; }
 
 .indented-title {
-  padding: 3em 3em 2em 5em; }
+  padding: 2em 2em 2em 5em; }
 
 @media screen and (max-width: 680px) {
   .wrapper > section, .indented-title {
@@ -5463,6 +5473,39 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 
 .SOFIYAS-BOX .pure-img {
   padding: 1em 3em 2em 2em; }
+
+#get-involved {
+  background-color: #028090; }
+
+.tiny-button {
+  background-color: rgba(250, 250, 250, 0.96) !important;
+  padding: 0.45em 1em !important;
+  margin-left: 0.5em !important;
+  letter-spacing: 0.2em !important;
+  font-size: 10.5px !important;
+  vertical-align: middle;
+  color: #14b99a !important; }
+
+#makers-in-residence .tiny-button {
+  color: #312450 !important; }
+
+.tiny-button:hover, #makers-in-residence .tiny-button:hover {
+  background-color: inherit !important;
+  color: white !important; }
+
+.icon.fa-check {
+  color: #14b99a; }
+
+.carouselWrapper {
+  padding-left: 3em;
+  padding-right: 3em; }
+
+.resources-title {
+  padding-right: 2em; }
+
+.border-left {
+  border-left: solid 1px rgba(255, 255, 255, 0.15);
+  padding-left: 1em; }
 
 /*
 Offsets from https://raw.githubusercontent.com/tilomitra/pure/d7f85e37abec3fdab14a541305ad05783159655c/src/grids/css/grids-offsets.css
