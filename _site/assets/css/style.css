@@ -3370,7 +3370,7 @@ a {
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+  border-bottom: dotted 1px white;
   color: inherit;
   text-decoration: none; }
 
@@ -5199,6 +5199,15 @@ p {
 
   h3 {
     font-size: 1em; } }
+a:visited {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  border-bottom: dotted 3px purple;
+  color: inherit;
+  text-decoration: none; }
+
 /* nav */
 nav, #header {
   background: #14b99a;
@@ -5343,16 +5352,14 @@ footer .icon {
   width: 2.5em;
   height: 2.5em;
   display: inline-block;
-  background: white;
   border-radius: 100%;
-  color: #00568d;
   text-align: center;
   line-height: 2.5em;
   margin: 1em .35em 1em .35em; }
 
 footer .icon:hover {
-  color: white;
-  background-color: #00568d; }
+  color: #00568d;
+  background-color: white; }
 
 footer a {
   border-bottom: none; }
