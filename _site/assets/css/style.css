@@ -5161,6 +5161,12 @@ body, input, select, textarea {
   max-width: 80em;
   width: auto; }
 
+@media screen and (max-width: 736px) {
+  .spotlights > section > .content {
+    padding: 1em 1em 1em 1em; }
+
+  .slick-slider {
+    margin-bottom: 10px !important; } }
 /* text */
 h1.major {
   border: none;
@@ -5299,17 +5305,21 @@ h1, h2, h3, .title {
 #makerlab-text {
   width: 100%;
   margin-bottom: 3em;
-  font-weight: 500; }
+  font-weight: 500;
+  display: table; }
 
 #makerlab-text h1 {
   border: 15px solid white;
-  padding: 0em .2em 0em .2em;
+  padding: 0em !important;
   margin: 0px;
   font-weight: 900;
   font-size: 5em;
   letter-spacing: .1em;
   display: inline; }
 
+@media screen and (max-width: 1048px) {
+  #makerlab-text h1 {
+    border: none; } }
 @media screen and (max-width: 925px) {
   #intro {
     padding-top: 13em; } }
@@ -5324,13 +5334,21 @@ h1, h2, h3, .title {
     font-size: 3.5em; } }
 @media screen and (max-width: 500px) {
   #makerlab-text h1 {
-    font-size: 3em;
-    border: 10px solid white; } }
+    font-size: 3em; }
+
+  .features section .icon {
+    left: 0em !important;
+    top: .5em !important; }
+
+  .features section {
+    padding: 0px !important; } }
 @media screen and (max-width: 440px) {
   #makerlab-text h1 {
-    border: 6px solid white;
     padding: 0em .2em 0em .2em;
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  .features {
+    margin: 0px; } }
 @media screen and (max-width: 428px) {
   #makerlab-text h1 {
     padding: .2em;
@@ -5375,7 +5393,7 @@ footer a {
 
 /* sections */
 .section {
-  padding: 3em 6em 3em 5em; }
+  padding: 2em 5em 2em 4em; }
 
 .features {
   border: none;
@@ -5417,18 +5435,18 @@ footer a {
   padding: 5em 5em 3em 5em;
   max-width: 100%; }
 
-.wrapper #activities, #tools {
-  padding: 2em 2em 1em 2em; }
-
 .indented-title {
   padding: 2em 2em 2em 5em; }
 
 @media screen and (max-width: 680px) {
   .wrapper > section, .indented-title {
-    padding: 2em 3em 2em 3.5em; } }
+    padding: 1em 2em 1em 2em; }
+
+  .section {
+    padding: 2em 2em 2em 2em; } }
 @media screen and (max-width: 400px) {
   .wrapper > section, .indented-title {
-    padding: 2em 2em 1em 2em; } }
+    padding: 1em 1em 1em 1em; } }
 /* clubs */
 .SOFIYAS-BOX {
   padding-top: .5em;
@@ -5514,6 +5532,9 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
   border-left: solid 1px rgba(255, 255, 255, 0.15);
   padding-left: 1em; }
 
+@media screen and (max-width: 1023px) {
+  .border-left {
+    border: none; } }
 /*
 Offsets from https://raw.githubusercontent.com/tilomitra/pure/d7f85e37abec3fdab14a541305ad05783159655c/src/grids/css/grids-offsets.css
 Media queries from Pure v0.5.0
