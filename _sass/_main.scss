@@ -20,6 +20,9 @@ body, input, select, textarea {
         margin-bottom: 10px !important;
     }
 }
+.slick-slide img {
+    border: 10px solid white;
+}
 
 /* text */
 h1.major {
@@ -44,10 +47,30 @@ h2, h3 {
 }
 h3 {
     font-size: 1.2em;
-    margin: .5em 0 0.2em 0;
+    margin: .0em 0 0.2em 0;
 }
 h4 {
-    font-weight: normal;
+    font-weight: bold;
+    padding-top: .6em;
+    padding-bottom: .1em;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+.event-subheading {
+    line-height: normal;
+    padding-top: .2em;
+}
+.date {
+    border-right: 1px solid white;
+    padding-right: .6em;
+}
+.location {
+    padding-left: .4em;
+}
+.info {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    line-height: normal;
 }
 p {
     margin: 0 0 1em 0;
@@ -58,6 +81,9 @@ p {
         font-size: 1.5em;
     }
     h3 {
+        font-size: 1em;
+    }
+    h4 {
         font-size: 1em;
     }
 }
@@ -436,4 +462,8 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     .border-left {
         border: none;
     }
+}
+.events-section {
+    padding-top: .5em;
+    padding-bottom: 1em;
 }

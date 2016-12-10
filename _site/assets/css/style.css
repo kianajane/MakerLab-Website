@@ -5167,6 +5167,9 @@ body, input, select, textarea {
 
   .slick-slider {
     margin-bottom: 10px !important; } }
+.slick-slide img {
+  border: 10px solid white; }
+
 /* text */
 h1.major {
   border: none;
@@ -5190,10 +5193,30 @@ h2, h3 {
 
 h3 {
   font-size: 1.2em;
-  margin: .5em 0 0.2em 0; }
+  margin: .0em 0 0.2em 0; }
 
 h4 {
-  font-weight: normal; }
+  font-weight: bold;
+  padding-top: .6em;
+  padding-bottom: .1em;
+  margin-bottom: 0px;
+  line-height: normal; }
+
+.event-subheading {
+  line-height: normal;
+  padding-top: .2em; }
+
+.date {
+  border-right: 1px solid white;
+  padding-right: .6em; }
+
+.location {
+  padding-left: .4em; }
+
+.info {
+  padding-top: .4em;
+  padding-bottom: .4em;
+  line-height: normal; }
 
 p {
   margin: 0 0 1em 0;
@@ -5204,6 +5227,9 @@ p {
     font-size: 1.5em; }
 
   h3 {
+    font-size: 1em; }
+
+  h4 {
     font-size: 1em; } }
 a:visited {
   -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -5535,6 +5561,10 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 @media screen and (max-width: 1023px) {
   .border-left {
     border: none; } }
+.events-section {
+  padding-top: .5em;
+  padding-bottom: 1em; }
+
 /*
 Offsets from https://raw.githubusercontent.com/tilomitra/pure/d7f85e37abec3fdab14a541305ad05783159655c/src/grids/css/grids-offsets.css
 Media queries from Pure v0.5.0
