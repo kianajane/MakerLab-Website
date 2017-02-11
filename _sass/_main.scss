@@ -1,16 +1,44 @@
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+
+
+
+* {
+    overflow-x: hidden;
+    letter-spacing: normal;
+    line-height: normal;
+}
 body, input, select, textarea {
     color: white;
     font-family: $secondary-font-family;
     font-size: 15px;
 }
-.pure-u-lg-1-2, .pure-u-lg-12-24, .pure-u-1-3, .pure-u-1, .pure-u-lg-1-3, .pure-u-1-5 {
-    padding-left: 1em;
-    padding-right: 1em;
+
+/* spotlights/makers-in-residence */
+.indented-title {
+    padding: $medium-container-padding;
 }
 .spotlights > section > .content {
-    padding-top: 1em;
-    max-width: 80em;
+    max-width: 70em;
     width: auto;
+    padding: $medium-container-padding;
+}
+.spotlights > section {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px $purple;
+}
+.spotlights > section:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+#makers-in-residence .tiny-button {
+    color: $purple !important;
+}
+.tiny-button:hover,#makers-in-residence .tiny-button:hover {
+    background-color: inherit!important;
+    color: white!important;
 }
 @media screen and (max-width: 736px) {
     .spotlights > section > .content {
@@ -27,8 +55,7 @@ body, input, select, textarea {
 /* text */
 h1.major {
     border: none;
-    margin: 0;
-    margin-bottom: .5em;
+    margin: 0 0 $medium-text-spacer 0;
     padding-bottom: 0;
     font-weight: normal;
 }
@@ -38,27 +65,25 @@ h1.major:after {
     background-image: -ms-linear-gradient(to right, $dark-blue, $makerlab-green);
     background-image: linear-gradient(to right, $dark-blue, $makerlab-green);
 }
+h1, h2, h3, .title {
+    font-family: $base-font-family;
+}
+p {
+    margin: $large-text-spacer 0 $large-text-spacer 0;
+}
 h2 {
-    margin-bottom: .2em;
-    margin-top: .2em;
+    margin: $medium-text-spacer 0 $medium-text-spacer 0;
 }
 h2, h3 {
     letter-spacing: .1em;
 }
 h3 {
     font-size: 1.2em;
-    margin: .0em 0 0.2em 0;
+    margin: $small-text-spacer 0 $small-text-spacer 0;
 }
 h4 {
     font-weight: bold;
-    padding-top: .6em;
-    padding-bottom: .1em;
-    margin-bottom: 0px;
-    line-height: normal;
-}
-.event-subheading {
-    line-height: normal;
-    padding-top: .2em;
+    margin: 0;
 }
 .date {
     border-right: 1px solid white;
@@ -68,13 +93,7 @@ h4 {
     padding-left: .4em;
 }
 .info {
-    padding-top: .4em;
-    padding-bottom: .4em;
-    line-height: normal;
-}
-p {
-    margin: 0 0 1em 0;
-    letter-spacing: normal;
+    padding: .4em 0 .4em 0;
 }
 @media screen and (max-width: 736px) {
     h2 {
@@ -116,7 +135,6 @@ ul li {
 }
 nav ul {
   list-style-type: none;
-  overflow: hidden;
   background-color: $makerlab-green;
   margin: 0;
 }
@@ -182,14 +200,21 @@ ul.topnav li.icon {display: none;}
     background: $makerlab-green;
     padding-top: 10em;
 }
-h1, h2, h3, .title {
-    font-family: $base-font-family;
-}
 #makerlab-text {
     width: 100%;
     margin-bottom: 3em;
     font-weight: 500;
     display: table;
+}
+@media screen and (max-width:925px) {
+    #intro {
+        padding-top: 13em;
+    }
+}
+@media screen and (max-width:680px) {
+    #intro {
+        padding-top: 7em;
+    }
 }
 #makerlab-text h1 {
     border: 15px solid white;
@@ -205,21 +230,12 @@ h1, h2, h3, .title {
         border: none;
     }
 }
-@media screen and (max-width:925px) {
-    #intro {
-        padding-top: 13em;
-    }
-}
 @media screen and (max-width:855px) {
     #makerlab-text h1 {
         font-size: 4em;
     }
 }
-@media screen and (max-width:680px) {
-    #intro {
-        padding-top: 7em;
-    }
-}
+
 @media screen and (max-width:640px) {
     #makerlab-text h1 {
         font-size: 3.5em;
@@ -255,11 +271,6 @@ h1, h2, h3, .title {
         margin-bottom: 2em;
     }
 }
-// * {
-//   background: #000 !important;
-//   color: #0f0 !important;
-//   outline: solid #f00 1px !important;
-// }
 
 .features section .icon {
     left: 2em;
@@ -279,13 +290,15 @@ footer .icon {
     border-radius: 100%;
     text-align: center;
     line-height: 2.5em;
-    margin: 1em .35em 1em .35em;
 }
 footer .icon:hover {
     color: $blue;
     background-color: white;
 }
-footer a {border-bottom: none;}
+footer a {
+    border-bottom: none;
+    margin: 1em .35em 1em .35em;
+}
 .contact-text {
     text-transform: uppercase;
     font-family: $secondary-font-family;
@@ -293,16 +306,17 @@ footer a {border-bottom: none;}
     color: $white-75;
     font-weight: bold;
     letter-spacing: 0.2em;
-    line-height: 1.75;
+    margin: 0 0 .5em 0;
 }
 
 /* sections */
 .section {
-    padding: 2em 5em 2em 4em;
+    padding: $large-container-padding;
 }
 .features {
     border: none;
     background: none;
+    margin: 0;
 }
 .features section {
     padding: 1em 1em 1em 6em;
@@ -323,42 +337,31 @@ footer a {border-bottom: none;}
     background-color: $teal;
 }
 #main {
-    background-color: $makerlab-green;
-    overflow:hidden;
+    padding-top: $small-spacer;
 }
 @media screen and (max-width:1246px) {
     #main {
-        padding-top: 10em;
+        padding-top: $large-spacer;
     }
 }
 @media screen and (max-width:680px) {
     #main {
-        padding-top: 5em;
+        padding-top: $medium-spacer;
     }
 }
 
 /* wrapper */
 .wrapper {
-    position: relative;
-}
-.wrapper > section {
-    padding: 5em 5em 3em 5em ;
-    max-width: 100%;
-}
-.indented-title {
-    padding: 2em 2em 2em 5em;
+    padding: $large-container-padding;
+    width: 100%;
+    background-color: $makerlab-green;
 }
 @media screen and (max-width:680px) {
     .wrapper > section, .indented-title {
-        padding: 1em 2em 1em 2em;
+        padding: $small-container-padding;
     }
     .section {
         padding: 2em 2em 2em 2em;
-    }
-}
-@media screen and (max-width:400px) {
-    .wrapper > section, .indented-title {
-        padding: 1em 1em 1em 1em;
     }
 }
 
@@ -387,13 +390,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     letter-spacing: .2em;
     font-size: .6em;
 }
-.spotlights > section {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-bottom: 4px $purple;
-}
-.spotlights > section:nth-child(even) {
-	background-color: rgba(0, 0, 0, 0.05);
-}
 
 .inline-button-link {
     display: inline;
@@ -420,9 +416,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     padding: 1em 3em 2em 2em;
 }
 
-#get-involved {
-    background-color: $teal;
-}
 
 .tiny-button {
     background-color: rgba(250,250,250,.96)!important;
@@ -432,13 +425,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     font-size: 10.5px !important;
     vertical-align: middle;
     color: $makerlab-green!important;
-}
-#makers-in-residence .tiny-button {
-    color: $purple !important;
-}
-.tiny-button:hover,#makers-in-residence .tiny-button:hover {
-    background-color: inherit!important;
-    color: white!important;
 }
 
 .icon.fa-check {
@@ -463,7 +449,62 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
         border: none;
     }
 }
+
+.card {
+    padding: 1em;
+    border: 2px solid $border;
+    border-radius: 10px;
+}
+
+/* front page double section*/
+#activities, #tools {
+    padding: $small-spacer;
+    h2 {
+        text-align: center;
+    }
+}
+
+/* front page get involved section */
+#get-involved {
+    background-color: $teal;
+}
+
+/* events */
 .events-section {
     padding-top: .5em;
     padding-bottom: 1em;
+}
+.event {
+    padding-bottom: $medium-text-spacer;
+}
+.event-info, .event-subheading {
+    line-height: normal;
+    padding-bottom: $medium-text-spacer;
+}
+.event-col {
+    padding-left: $medium-spacer;
+}
+.responsiveCal {
+    padding: $medium-text-spacer 0 $medium-text-spacer 0;
+}
+.event-subsection {
+    padding: $medium-text-spacer 0 $medium-text-spacer 0;
+}
+
+.bg-text {
+    background-color: #aaa;
+    overflow: hidden;
+    padding: 20px 20px 100px 20px;
+    position: relative;
+    width: 400px;
+}
+.bg-text::after {
+    color: #fff;
+    content: attr(data-bg-text);
+    display: block;
+    font-size: 80px;
+    line-height: 1;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
 }
