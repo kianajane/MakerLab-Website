@@ -2458,12 +2458,6 @@ form {
   color: black; }
 
 * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important; }
-
-* {
-  overflow-x: hidden;
   letter-spacing: normal;
   line-height: normal; }
 
@@ -2495,6 +2489,10 @@ body, input, select, textarea {
   background-color: inherit !important;
   color: white !important; }
 
+@media screen and (max-width: 1117px) {
+  .tiny-button {
+    margin-top: 1em !important;
+    margin-left: 0 !important; } }
 @media screen and (max-width: 736px) {
   .spotlights > section > .content {
     padding: 1em 1em 1em 1em; }
@@ -2502,7 +2500,11 @@ body, input, select, textarea {
   .slick-slider {
     margin-bottom: 10px !important; } }
 .slick-slide img {
-  border: 10px solid white; }
+  border: 10px solid rgba(2, 128, 144, 0.35); }
+
+.slick-prev:before, .slick-next:before {
+  color: white;
+  opacity: .75; }
 
 /* text */
 h1.major {
@@ -2605,7 +2607,7 @@ ul.topnav li a {
   color: rgba(255, 255, 255, 0.7); }
 
 ul.topnav li a:hover {
-  background-color: #028090; }
+  background-color: rgba(2, 128, 144, 0.35); }
 
 ul.topnav li.icon {
   display: none; }
@@ -2754,7 +2756,7 @@ footer a {
   background-color: #028090; }
 
 .makerlab-green-medium {
-  background-color: #0f8b74; }
+  background-color: #23aa90; }
 
 .makerlab-green {
   background-color: #14b99a; }
@@ -2785,7 +2787,10 @@ footer a {
     padding: 1em 2em 1em 2em; }
 
   .section {
-    padding: 2em 2em 2em 2em; } }
+    padding: 2em 2em 2em 2em; }
+
+  .wrapper {
+    padding: 1em; } }
 /* clubs */
 .SOFIYAS-BOX {
   padding-top: .5em;
@@ -2858,15 +2863,27 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
   .border-left {
     border: none; } }
 .card {
-  padding: 1em;
-  border: 2px solid rgba(0, 0, 0, 0.05);
-  border-radius: 10px; }
+  padding: 1em 2em 1em 2em;
+  border-radius: 10px;
+  margin: .5em .5em .5em .5em;
+  background-color: rgba(2, 128, 144, 0.35); }
 
 /* front page double section*/
 #activities, #tools {
   padding: 2em; }
   #activities h2, #tools h2 {
     text-align: center; }
+
+#tools {
+  background-color: #00568d; }
+
+#tools .icon {
+  background-color: #1371ad;
+  color: white; }
+
+#activities .icon {
+  background-color: #33cdb0;
+  color: white; }
 
 /* front page get involved section */
 #get-involved {
@@ -2887,25 +2904,45 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 .event-col {
   padding-left: 5em; }
 
+@media screen and (max-width: 767px) {
+  .event-col {
+    padding-left: 0px; } }
 .responsiveCal {
   padding: 0.5em 0 0.5em 0; }
+
+.half-pad-right {
+  padding-right: 1em; }
 
 .event-subsection {
   padding: 0.5em 0 0.5em 0; }
 
 .bg-text {
-  background-color: #aaa;
   overflow: hidden;
-  padding: 20px 20px 100px 20px;
-  position: relative;
-  width: 400px; }
+  padding: 42px 1px 42px 20px;
+  position: relative; }
+
+.bg-text h3 {
+  text-align: center;
+  z-index: 10;
+  position: relative; }
 
 .bg-text::after {
   color: #fff;
+  opacity: .15;
   content: attr(data-bg-text);
-  display: block;
-  font-size: 80px;
+  font-size: 144px;
+  font-weight: bold;
   line-height: 1;
   position: absolute;
-  bottom: -15px;
-  right: 10px; }
+  top: -7px;
+  left: 86px; }
+
+@media screen and (max-width: 1024px) {
+  .bg-text::after {
+    display: none; }
+
+  .bg-text {
+    padding: 0px; }
+
+  .bg-text h3 {
+    text-align: left; } }

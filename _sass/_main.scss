@@ -1,13 +1,12 @@
-* {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-}
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
 
 
 
 * {
-    overflow-x: hidden;
     letter-spacing: normal;
     line-height: normal;
 }
@@ -40,6 +39,12 @@ body, input, select, textarea {
     background-color: inherit!important;
     color: white!important;
 }
+@media screen and (max-width: 1117px) {
+  .tiny-button {
+    margin-top: 1em !important;
+    margin-left: 0 !important;
+  }
+}
 @media screen and (max-width: 736px) {
     .spotlights > section > .content {
         padding: 1em 1em 1em 1em;
@@ -49,7 +54,11 @@ body, input, select, textarea {
     }
 }
 .slick-slide img {
-    border: 10px solid white;
+    border: 10px solid $teal-medium;
+}
+.slick-prev:before, .slick-next:before {
+    color: white;
+    opacity: .75;
 }
 
 /* text */
@@ -106,7 +115,6 @@ h4 {
         font-size: 1em;
     }
 }
-
 a:visited {
     -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
     -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -154,7 +162,7 @@ ul.topnav li a {
   font-weight: bold;
   color: $white-75;
 }
-ul.topnav li a:hover {background-color: $teal;}
+ul.topnav li a:hover {background-color: $teal-medium;}
 ul.topnav li.icon {display: none;}
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
@@ -363,6 +371,9 @@ footer a {
     .section {
         padding: 2em 2em 2em 2em;
     }
+    .wrapper {
+        padding: 1em;
+    }
 }
 
 /* clubs */
@@ -451,9 +462,10 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 }
 
 .card {
-    padding: 1em;
-    border: 2px solid $border;
+    padding: 1em 2em 1em 2em;
     border-radius: 10px;
+    margin: .5em .5em .5em .5em;
+    background-color: $teal-medium;
 }
 
 /* front page double section*/
@@ -462,6 +474,17 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     h2 {
         text-align: center;
     }
+}
+#tools {
+  background-color: $blue;
+}
+#tools .icon {
+  background-color: $blue-light;
+  color: white;
+}
+#activities .icon {
+  background-color: $makerlab-green-light;
+  color: white;
 }
 
 /* front page get involved section */
@@ -484,27 +507,50 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 .event-col {
     padding-left: $medium-spacer;
 }
+@media screen and (max-width: 767px) {
+  .event-col {
+      padding-left: 0px;
+  }
+}
 .responsiveCal {
     padding: $medium-text-spacer 0 $medium-text-spacer 0;
+}
+.half-pad-right {
+  padding-right: 1em;
 }
 .event-subsection {
     padding: $medium-text-spacer 0 $medium-text-spacer 0;
 }
 
 .bg-text {
-    background-color: #aaa;
     overflow: hidden;
-    padding: 20px 20px 100px 20px;
+    padding: 42px 1px 42px 20px;
     position: relative;
-    width: 400px;
+}
+.bg-text h3 {
+    text-align: center;
+    z-index: 10;
+    position: relative;
 }
 .bg-text::after {
     color: #fff;
+    opacity: .15;
     content: attr(data-bg-text);
-    display: block;
-    font-size: 80px;
+    font-size: 144px;
+    font-weight: bold;
     line-height: 1;
     position: absolute;
-    bottom: -15px;
-    right: 10px;
+    top: -7px;
+    left: 86px;
+}
+@media screen and (max-width:1024px) {
+  .bg-text::after {
+    display: none;
+  }
+  .bg-text {
+    padding: 0px;
+  }
+  .bg-text h3 {
+    text-align: left;
+  }
 }
