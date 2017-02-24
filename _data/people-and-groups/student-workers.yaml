@@ -1,0 +1,41 @@
+- name: Student Workers
+  students:
+    - name: Julie
+      description: "Julie Anne Ruiz is aiming for a BA in History (Honors) and East Asian Studies. At the MakerLab, she specializes in Emerging Technology and Innovation. This includes 3D printing, 3D scanning (Skanect and Artec), and VR equipment. Julie loves learning and being involved in everything. Talk to her when you walk into the MakerLab (especially if you are interested in DeisVR)."
+      contact:
+        - name: "Email"
+          link: "mailto:jr1470@brandeis.edu"
+        - name: Website
+          link: "http://julieanneruiz.com"
+        - name: LinkedIn
+          link: "https://linkedin.com/in/julieanneruiz"
+    - name: Danny
+      description: "Danny is a senior majoring in Health: Science, Society, and Policy & Computer Science. His areas of focus at the MakerLab are 3D printing, 3D modeling, and 3D scanning."
+      contact:
+        - name: "LinkedIn"
+          link: "https://linkedin.com/in/danielkimmel"
+    - name: John
+      description: "John maintains and configures the custom PC’s in the Makerlab and makes sure everything isn’t broken. He likes to configure and play with VR systems as well. He enjoys science, education, and technology. He would like to go to medical school, and is a BS/MS Biology Candidate at Brandeis."
+      contact:
+        - name: "Email"
+          link: "mailto:jdeng@brandeis.edu"
+        - name: LinkedIn
+          link: "https://www.linkedin.com/in/john-deng-4546b284"
+    - name: Youssef
+      description: "Youssef is a sophomore majoring in physics with a minor in math. He is planning on participating in the Columbia University 3-2 Engineering Program. At the MakerLab, Youssef CADs in SolidWorks, repairs printers, helps others, and prints whenever possible."
+      contact:
+        - name: "Email"
+          link: "mailto:yfahmy98@brandeis.com"
+        - name: LinkedIn
+          link: "https://www.linkedin.com/in/youssef-fahmy-018a73126?trk=hp-identity-photo"
+    - name: Sofiya
+      description: "Sofiya, queen of code, is a senior majoring in computer science and minoring in physics. At the MakerLab, her area of expertise is web development, branding, design. She is the foremost expert on colors and shapes. Come to her with any questions about programming and design."
+      contact:
+        - name: "Email"
+          link: "mailto:sofiya@brandeis.edu"
+        - name: Website
+          link: "http://sofiya.io/"
+        - name: LinkedIn
+          link: "https://www.linkedin.com/in/novasofiya"
+        - name: Twitter
+          link: "https://twitter.com/novasofiya"

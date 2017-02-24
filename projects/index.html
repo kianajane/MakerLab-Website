@@ -2,42 +2,25 @@
 layout: page
 title:  "Featured Projects"
 ---
+{% assign data = site.data.featured-projects %}
+
 <div class="featured-projects">
 	<div class="indented-title">
 		<h2>Research Projects</h2>
 	</div>
 	<div class="spotlights">
-    <section>
-		<div class="image" style="background-image: url('/assets/images/proteins.png');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-		<div class="content">
-			<div class="inner">
-				<h2>3D Printing Biomolecular Models</h2>
-				<p>As an undergraduate Eduardo came into the lab thinking 3D printing was science fiction. After several months immersing himself in the MakerLab, he developed a process to download protein data sets from the Protein Data Bank and render them in a molecular visualizer, in a format suitable to be 3D printed. In the course of his work, he downloaded from the protein bank and rendered on his own over 50 proteins that had never before been physicalized. The National Institutes of Health noticed his work, and while still an undergraduate, in a 2016 collaboration with the NIH, Eduardo published a technique for using low end consumer 3D printers to make models of proteins. Soon after Eduardo worked closely with Prof. Krummel’s Biochemistry class teaching students to print proteins for other students, revolutionizing the teaching of molecular biology and moving it from 3D projection on screen to physical objects every student could handle, examine, and take home with them.
-
-				</p>
+		{% for project in data.current %}
+	    <section>
+			<div class="image" style="background-image: url('/assets/images/{{ project.image }}');background-position: 50% 50%;" alt="" data-position="center center"/></div>
+			<div class="content">
+				<div class="inner">
+					<h2>{{ project.name }}</h2>
+					<p>{{ project.description }}</p>
+				</div>
 			</div>
-		</div>
-	</section>
-	<section>
-		<div class="image" style="background-image: url('/assets/images/greece.png');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-		<div class="content">
-			<div class="inner">
-				<h2>Greece Fieldwork</h2>
-				<p>Professor Koh is a professor in the Chemistry and Classics departments, and teaches in both. The Brandeis MakerLab partnered with the Digital Humanities Lab to advance what’s possible for his field research. We bought a field kit to Greece for the summer of 2016 to work with the Heraklion Museum digitizing ancient objects from warrior tombs dating between 3000 and 5000 BC. The 3D scans were so accurate that we were able to perceive fingerprints on pottery never before noticed. There are plans through 2020 to do additional field work each summer, including aerial 3D scans of tomb excavations and preservation through the use of digitization techniques of tomb exteriors before excavation. Professor Koh is excited that this will provide major leaps in what’s possible for modern Archaeology. Brandeis CLARC (Classical Artifact Research Collection) undergraduate research students are involved in this effort. They are involved in the processing of 3D scan data. Also, while there were no undergraduates from Brandeis on site this past summer, they plan to bring Brandeis undergraduates in future summers. It’s a real Brandeis undergraduate research opportunity.
-				</p>
-			</div>
-		</div>
-	</section>
-    <section>
-		<div class="image" style="background-image: url('/assets/images/CLARC.png');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-		<div class="content">
-			<div class="inner">
-				<h2>CLARC Internship Program </h2>
-				<p>CLARC (Classics Artifact Research Collection) - in summer 2006 about 800 ancient archaeological objects were discovered by AOKO in the Rose Art Museum, acquired by a past professor and left behind and forgotten when he moved on. AOKO rediscovered them. In Fall 2006 Classics began a formal year-long internship program where undergraduates research and document ancient artifacts. The MakerLab has been working with them for 3 years now helping with digitization, both 2D object photography and 3D scanning, and 3D printing and reproductions. This gives the undergraduates not just access to a physical duplication of the object that they can take with them, it also teaches them fundamental skills about the future of digital curation and preservation.
-				</p>
-			</div>
-		</div>
-	</section>
+			</section>
+		{% endfor %}
+	</div>
 </div>
 
 <div class="featured-projects">
@@ -45,46 +28,16 @@ title:  "Featured Projects"
 	    <h2>Completed Maker in Residence Projects</h2>
 	</div>
 	<div class="spotlights">
-        <section>
-    		<div class="image" style="background-image: url('/assets/images/graybiel.jpg');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-    		<div class="content">
-    			<div class="inner">
-    				<h2>Balance Maintanance Study <span class="icon fa-check"></span></h2>
-    				<p>Sacha Panic was a PhD graduate student in cognitive neuroscience. In his dissertation research he studied how people maintain balance, and the role that the vision, the inner ear's balance organ, and gravity plays in that. He took some data from one of his experiments, and turned that into a 3D printed sculpture that represents that data in such a way that one can gain a different understanding from it, compared to "just" looking at a 2D graph on a screen. This was a collaboration with Vivekanand Pandey Vimal (who provided the data) and Alberto Pierobon (who helped with designing the stand) and Brandeis University LTS Maker Lab.
-    				</p>
-    			</div>
-    		</div>
-    	</section>
-		<section>
-			<div class="image" style="background-image: url('/assets/images/HSsummer.png');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-			<div class="content">
-				<div class="inner">
-					<h2>Waltham High School Summer Program <span class="icon fa-check"></span></h2>
-					<p>Summer 2015 we had six Waltham High School students participate in a program (designed by Vivekanand Pandey Vimal, Professor Krummel, Anique Olivier-Mason and Eduardo Beltrame), where they learned about Biochemistry and DNA, with 3D printed molecules to help them visualize. You can read more about this program at Brandeis Library and Technology Services' blog. PhD researcher Vivek got a Spark grant through the HFIC to bring half a dozen Waltham High School students into a program of hands-on research in Brandeis science labs. In partnership with Brandeis’s MRSEC division, Vivek assembled a team of ten graduate students and staff to teach lessons on the fundamental building blocks of biology. The MakerLab assisted in 3D printing molecular models including a capstone project that was a 5 foot tall DNA strand.
-					</p>
-				</div>
-			</div>
-		</section>
-        <section>
-            <div class="image" style="background-image: url('/assets/images/vetii.png');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-            <div class="content">
-                <div class="inner">
-                    <h2>House of the Vetii <span class="icon fa-check"></span></h2>
-                    <p>Priyam Shah, an undergraduate from the Neuroscience department created House of the Vettii, a Roman townhouse located in the ancient city of Pompeii. The house is two-scale, as it was in Rome, you can walk around and meet virtual people — shopkeepers, even people playing chess on the steps of the Roman Basilica. 
-                    </p>
-                </div>
-            </div>
-        </section>
-		<section>
-			<div class="image" style="background-image: url('/assets/images/roseart.png');background-position: 50% 50%;" alt="" data-position="center center"/></div>
-			<div class="content">
-				<div class="inner">
-					<h2>Rose Art Museum, Louise Nevelson Exhibition <span class="icon fa-check"></span></h2>
-					<p>Daniela Dimitrova an undergraduate from the Fine Arts department, who also came to the MakerLab thinking that virtual reality and 3D printing were science fiction. In collaboration with another undergraduate she founded the Virtual Reality club. She learned Unity and Unreal Engine and created a lighting-accurate copy of the Rose Art Museum, where they can not only prestage exhibits to see how they will flow in the space, they can re-create past exhibits that no longer exist -- including Louise Nevelson’s exhibit from the 1960’s that was lost in a fire. After creating the virtual space, Daniela created a 1:1 scale copy of the artwork lost in the fire, 3D printing over 20 pieces that assembled into a photo-realistic recreation of the lost sculpture.
-
-					</p>
-				</div>
-			</div>
-		</section>
-    </div>
-</section>
+		{% for project in data.old %}
+      <section>
+  		<div class="image" style="background-image: url('/assets/images/{{ project.image }}');background-position: 50% 50%;" alt="" data-position="center center"/></div>
+  		<div class="content">
+  			<div class="inner">
+  				<h2>{{ project.name }} <span class="icon fa-check"></span></h2>
+  				<p>{{ project.description }}</p>
+  			</div>
+  		</div>
+  		</section>
+		{% endfor %}
+	</div>
+</div>
