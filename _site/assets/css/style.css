@@ -2918,7 +2918,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 
 .bg-text {
   overflow: hidden;
-  padding: 42px 1px 42px 20px;
+  padding: 42px 1px 42px 0px;
   position: relative; }
 
 .bg-text h3 {
@@ -2935,7 +2935,7 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
   line-height: 1;
   position: absolute;
   top: -7px;
-  left: 86px; }
+  left: 87px; }
 
 @media screen and (max-width: 1024px) {
   .bg-text::after {

@@ -9,17 +9,5 @@
       link: http://codestellation.io
       date: Fall 2017
       location: TBA
-- name: Conferences and Talks
-  events:
-    - name: "The Role of Emerging Technologies in Higher Ed: Impacts on Teaching, Learning, and Research"
-      link: "https://events.educause.edu/eli/annual-meeting/2017/agenda/sem04the-role-of-emerging-technologies-in-higher-ed-impacts-on-teaching-learning-and-research-separate-registration-is-required"
-      date: "Feb 13-15, 2017"
-      location: ELI Annual Meeting 2017, Houston, TX
-    - name: "Virtual Reality and Emerging Tech Playground: The Role of Emerging Technologies in Higher Education"
-      link: "https://events.educause.edu/eli/annual-meeting/2017/agenda/virtual-reality-and-emerging-tech-playground-the-role-of-emerging-technologies-in-higher-education"
-      date: "Feb 13-15, 2017, Houston, TX"
-      location: "ELI Annual Meeting 2017, Houstin, TX"
-    - name: "How to Pack a Mobile Makerspace: Digital Fabrication Workflows in Support of Faculty Field Research"
-      date: "Feb 13-15, 2017"
-      link: "https://events.educause.edu/eli/annual-meeting/2017/agenda/how-to-pack-a-mobile-makerspace-digital-fabrication-workflows-in-support-of-faculty-field-research"
-      location: ELI Annual Meeting 2017, Houston, TX
+# - name: Conferences and Talks
+#   events:
