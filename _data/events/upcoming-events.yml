@@ -1,13 +1,9 @@
 
 - name: Hackathons
   events:
-    - name: Printathon
+    - name: Printathon IV
       link: http://printathon.org
-      date: March 25 - 26
-      location: TBA
-    - name: Codestellation
-      link: http://codestellation.io
-      date: Fall 2017
+      date: March 2018
       location: TBA
 # - name: Conferences and Talks
 #   events:

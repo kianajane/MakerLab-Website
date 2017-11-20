@@ -1,7 +1,7 @@
 - name: Staff
   people:
     - name: Ian Roy
-      description: "Assistant Director for Research Technology and Innovation
+      description: "Director for Research Technology and Innovation
       Head of Brandeis MakerLab
       Staff Advisor to 3D Printing Club, Deis3D.org
       Hardware Advisor to BITMAP
@@ -22,8 +22,7 @@
         - name: "Email"
           link: "mailto:hazalu@brandeis.edu"
     - name: Tim Hebert
-      description: "Media Technology Systems Administrator, Media Technology Services
-          Embedded Systems Consultant, Brandeis MakerLab"
+      description: "Embedded Systems and Robotics Consultant, Brandeis MakerLab"
       contact:
         - name: "Email"
           link: "mailto:thebert@brandeis.edu"
