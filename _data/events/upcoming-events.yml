@@ -1,9 +1,17 @@
 
 - name: Hackathons
   events:
-    - name: Printathon IV
-      link: http://printathon.org
-      date: March 2018
+    - name: "Printathon IV"
+      link: "http://printathon.org"
+      date: "March 2018"
       location: TBA
-# - name: Conferences and Talks
-#   events:
+- name: Conferences and Talks
+  events:
+    - name: "Teaching, Learning, and Research with Emerging Technologies: Guided Discussions of Strategies"
+      link: "https://events.educause.edu/eli/annual-meeting/2018/agenda/sem02teaching-learning-and-research-with-emerging-technologies-guided-discussions-of-strategies-separate-registration-is-required"
+      date: "January 29, 2018"
+      location: ELI Annual Meeting 2018, New Orleans, LA
+    - name: "Making Makers: Students at the Center of Education, Technology, and Innovation"
+      link: "https://events.educause.edu/eli/annual-meeting/2018/agenda/making-makers-students-at-the-center-of-education-technology-and-innovation"
+      date: "January 30, 2018"
+      location: ELI Annual Meeting 2018, New Orleans, LA

@@ -1,11 +1,13 @@
 - name: Staff
   people:
     - name: Ian Roy
-      description: "Director for Research Technology and Innovation
-      Head of Brandeis MakerLab
-      Staff Advisor to 3D Printing Club, Deis3D.org
-      Hardware Advisor to BITMAP
-      Class of '05"
+      description:
+        - title: Director for Research Technology and Innovation
+        - title: Head of Brandeis MakerLab
+        - title: Adjunct Professor in the Brandeis International Business School
+        - title: Licensed FAA Section 107 sUAS Remote Pilot
+        - title: Staff Advisor to Brandeis 3D Printing Club, Brandeis VR club, Brandeis Aviation Club, and BITMAP
+        - title: Class of '05
       contact:
         - name: "Email"
           link: "mailto:ianroy@brandeis.edu"
@@ -15,14 +17,15 @@
           link: "https://twitter.com/ianiscray"
       phone: "(781) 736-4608"
     - name: Hazal Uzunkaya
-      description: "Brandeis University LTS
-          Research Technology Specialist
-          Service Coordinator of Brandeis MakerLab"
+      description:
+        - title: Brandeis University LTS Research Technology Specialist
+        - title: Service Coordinator of Brandeis MakerLab
       contact:
         - name: "Email"
           link: "mailto:hazalu@brandeis.edu"
     - name: Tim Hebert
-      description: "Embedded Systems and Robotics Consultant, Brandeis MakerLab"
+      description:
+        - title: Brandeis Makerlab Embedded Systems and Robotics Consultant
       contact:
         - name: "Email"
           link: "mailto:thebert@brandeis.edu"
